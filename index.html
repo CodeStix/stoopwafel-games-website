@@ -1,135 +1,157 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Stroopwafel Games | Crafting Sweet Experiences</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary-container": "#690006",
-                    "tertiary": "#ba0012",
-                    "inverse-on-surface": "#a09c96",
-                    "on-primary-fixed": "#240f00",
-                    "surface-bright": "#fbf6ef",
-                    "tertiary-dim": "#a4000e",
-                    "secondary-container": "#c4d0ff",
-                    "primary": "#8c4a00",
-                    "surface-container": "#ece8e0",
-                    "on-surface": "#302f2a",
-                    "on-secondary-fixed-variant": "#0047bd",
-                    "on-tertiary-fixed": "#3a0002",
-                    "surface-container-low": "#f5f0e9",
-                    "on-error": "#ffefec",
-                    "on-secondary": "#f1f2ff",
-                    "error-dim": "#b92902",
-                    "surface-container-lowest": "#ffffff",
-                    "secondary-dim": "#0046bb",
-                    "outline-variant": "#b0ada6",
-                    "error": "#b02500",
-                    "primary-container": "#fe932c",
-                    "surface-tint": "#8c4a00",
-                    "surface-container-highest": "#e1dcd4",
-                    "error-container": "#f95630",
-                    "on-background": "#302f2a",
-                    "on-secondary-fixed": "#002d80",
-                    "inverse-primary": "#fe932c",
-                    "tertiary-fixed-dim": "#ff7b6f",
-                    "tertiary-fixed": "#ff9287",
-                    "outline": "#797671",
-                    "primary-fixed-dim": "#ed871e",
-                    "background": "#fbf6ef",
-                    "on-tertiary": "#ffefed",
-                    "secondary-fixed": "#c4d0ff",
-                    "surface-container-high": "#e7e2da",
-                    "secondary": "#0050d4",
-                    "on-secondary-container": "#003ea9",
-                    "secondary-fixed-dim": "#b0c2ff",
-                    "surface-variant": "#e1dcd4",
-                    "primary-dim": "#7b4000",
-                    "inverse-surface": "#0f0e0b",
-                    "on-primary": "#fff0e7",
-                    "surface": "#fbf6ef",
-                    "primary-fixed": "#fe932c",
-                    "on-primary-container": "#4a2500",
-                    "on-tertiary-fixed-variant": "#7a0008",
-                    "tertiary-container": "#ff9287",
-                    "on-surface-variant": "#5e5b56",
-                    "on-error-container": "#520c00",
-                    "on-primary-fixed-variant": "#572c00",
-                    "surface-dim": "#d9d4cb"
-            },
-            "borderRadius": {
-                    "DEFAULT": "1rem",
-                    "lg": "2rem",
-                    "xl": "3rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Be Vietnam Pro"],
-                    "label": ["Be Vietnam Pro"]
+<html class="light" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Stroopwafel Games | Crafting Sweet Experiences</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "on-tertiary-container": "#690006",
+                            tertiary: "#ba0012",
+                            "inverse-on-surface": "#a09c96",
+                            "on-primary-fixed": "#240f00",
+                            "surface-bright": "#fbf6ef",
+                            "tertiary-dim": "#a4000e",
+                            "secondary-container": "#c4d0ff",
+                            primary: "#8c4a00",
+                            "surface-container": "#ece8e0",
+                            "on-surface": "#302f2a",
+                            "on-secondary-fixed-variant": "#0047bd",
+                            "on-tertiary-fixed": "#3a0002",
+                            "surface-container-low": "#f5f0e9",
+                            "on-error": "#ffefec",
+                            "on-secondary": "#f1f2ff",
+                            "error-dim": "#b92902",
+                            "surface-container-lowest": "#ffffff",
+                            "secondary-dim": "#0046bb",
+                            "outline-variant": "#b0ada6",
+                            error: "#b02500",
+                            "primary-container": "#fe932c",
+                            "surface-tint": "#8c4a00",
+                            "surface-container-highest": "#e1dcd4",
+                            "error-container": "#f95630",
+                            "on-background": "#302f2a",
+                            "on-secondary-fixed": "#002d80",
+                            "inverse-primary": "#fe932c",
+                            "tertiary-fixed-dim": "#ff7b6f",
+                            "tertiary-fixed": "#ff9287",
+                            outline: "#797671",
+                            "primary-fixed-dim": "#ed871e",
+                            background: "#fbf6ef",
+                            "on-tertiary": "#ffefed",
+                            "secondary-fixed": "#c4d0ff",
+                            "surface-container-high": "#e7e2da",
+                            secondary: "#0050d4",
+                            "on-secondary-container": "#003ea9",
+                            "secondary-fixed-dim": "#b0c2ff",
+                            "surface-variant": "#e1dcd4",
+                            "primary-dim": "#7b4000",
+                            "inverse-surface": "#0f0e0b",
+                            "on-primary": "#fff0e7",
+                            surface: "#fbf6ef",
+                            "primary-fixed": "#fe932c",
+                            "on-primary-container": "#4a2500",
+                            "on-tertiary-fixed-variant": "#7a0008",
+                            "tertiary-container": "#ff9287",
+                            "on-surface-variant": "#5e5b56",
+                            "on-error-container": "#520c00",
+                            "on-primary-fixed-variant": "#572c00",
+                            "surface-dim": "#d9d4cb",
+                        },
+                        borderRadius: {
+                            DEFAULT: "1rem",
+                            lg: "2rem",
+                            xl: "3rem",
+                            full: "9999px",
+                        },
+                        fontFamily: {
+                            headline: ["Plus Jakarta Sans"],
+                            body: ["Be Vietnam Pro"],
+                            label: ["Be Vietnam Pro"],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
             }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body { font-family: 'Be Vietnam Pro', sans-serif; }
-        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
-</head>
-<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-[#fbf6ef]/70 backdrop-blur-xl">
-<nav class="flex justify-center items-center px-8 py-6 max-w-7xl mx-auto">
-<div class="text-2xl font-bold text-[#8D5524] tracking-tight">Stroopwafel Games</div>
-</nav>
-</header>
-<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-8">
-<div class="max-w-4xl w-full flex flex-col items-center text-center gap-12">
-<!-- Studio Logo -->
-<div class="w-48 md:w-64 animate-fade-in">
-<img alt="Stroopwafel Games Logo" class="w-full h-auto drop-shadow-xl" src="https://lh3.googleusercontent.com/aida/ADBb0ujm_yX9xizm4FkeYWRWux364w9tNTowIjnVTcJkS9GwmwKMU3fb04XJSHOzMNF0uPAkHVRrLS7AkGqAaam1Sbg2qO5hMIRCYpxsbuTKsTjFFQbPOikHvwitcL4kYtc61_33-eLgIUqmqe_eEBcyMtcQbzxGAmnFoTYz_bdb7Dy4VQFgtuqUsnrNV2RFJgQsvMM7nm1V-29fV2xR1vR0f1q_2AfF2NMvtwf4hFpaiMe_TRKQZcAOhnhgB9iA-TfjNiPSwzho6myxhsA"/>
-</div>
-<!-- Featured Game "Bit by Bit" -->
-<div class="w-full space-y-8">
-<div class="relative group max-w-2xl mx-auto">
-<div class="absolute inset-0 bg-primary/10 rounded-xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
-<img alt="Bit by Bit Game" class="relative rounded-xl object-cover w-full shadow-2xl transform hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uh74852Kzr2gV2z3JOMBs_W8Lmx9Rte49vH9-MxuJWJf1AVrJaoxh6g2boKpfK5qu1tDWBjWW9y940Twqgmbrkgd_oUNEzu8ITLcQf6ujEoem1Kfbd8AavGCZygA4jCT_rEA6mAK8QfTXfNqtw3NnfJE7qeeg2gbbhZ2CmrIABDuvHw9XDN2CfUFY2fmVi_sSPL6PbJATC9MdsgQoQ9kUgpKQ3gGeatehF-CzuuVbu1WMjG-k0bTvbnJHZWnd7BDRYTjXbvNZyOGV8"/>
-</div>
-<div class="space-y-4">
-<h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Bit by Bit</h1>
-<p class="text-xl text-on-surface-variant max-w-lg mx-auto leading-relaxed">Where we blur the line between playing and making. Bit by Bit turns your questionable design choices into absolute nonsense, making the building feel like just another part of the game.</p>
-<div class="pt-4">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold hover:translate-y-[-2px] active:scale-95 transition-all duration-200">
-                            Explore Game
-                        </button>
-</div>
-</div>
-</div>
-</div>
-</main>
-<!-- Simple Footer -->
-<footer class="w-full py-8 border-t border-surface-container">
-<div class="max-w-7xl mx-auto px-8 text-center">
-<div class="text-[#302f2a]/60 text-sm font-['Be_Vietnam_Pro']">
-                © 2024 Stroopwafel Games. Crafted with Tactile Whimsy.
+            body {
+                font-family: "Be Vietnam Pro", sans-serif;
+            }
+            h1,
+            h2,
+            h3 {
+                font-family: "Plus Jakarta Sans", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+        <!-- TopNavBar -->
+        <header class="fixed top-0 w-full z-50 bg-[#fbf6ef]/70 backdrop-blur-xl">
+            <nav class="flex justify-center items-center px-8 py-6 max-w-7xl mx-auto">
+                <div class="text-2xl font-bold text-[#8D5524] tracking-tight">Stroopwafel Games</div>
+            </nav>
+        </header>
+        <main class="flex-grow flex items-center justify-center pt-12 pb-12 px-8">
+            <div class="max-w-4xl w-full flex flex-col items-center text-center gap-4">
+                <!-- Studio Logo -->
+                <div class="w-48 md:w-64 animate-fade-in">
+                    <img
+                        alt="Stroopwafel Games Logo"
+                        class="w-full h-auto drop-shadow-xl"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ujm_yX9xizm4FkeYWRWux364w9tNTowIjnVTcJkS9GwmwKMU3fb04XJSHOzMNF0uPAkHVRrLS7AkGqAaam1Sbg2qO5hMIRCYpxsbuTKsTjFFQbPOikHvwitcL4kYtc61_33-eLgIUqmqe_eEBcyMtcQbzxGAmnFoTYz_bdb7Dy4VQFgtuqUsnrNV2RFJgQsvMM7nm1V-29fV2xR1vR0f1q_2AfF2NMvtwf4hFpaiMe_TRKQZcAOhnhgB9iA-TfjNiPSwzho6myxhsA"
+                    />
+                </div>
+                <!-- Featured Game "Bit by Bit" -->
+                <div class="w-full space-y-8">
+                    <div class="relative group max-w-lg mx-auto">
+                        <div class="absolute inset-0 bg-primary/10 rounded-xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                        <img
+                            alt="Bit by Bit Game"
+                            class="relative rounded-xl object-cover w-full shadow-2xl transform hover:scale-[1.01] transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uh74852Kzr2gV2z3JOMBs_W8Lmx9Rte49vH9-MxuJWJf1AVrJaoxh6g2boKpfK5qu1tDWBjWW9y940Twqgmbrkgd_oUNEzu8ITLcQf6ujEoem1Kfbd8AavGCZygA4jCT_rEA6mAK8QfTXfNqtw3NnfJE7qeeg2gbbhZ2CmrIABDuvHw9XDN2CfUFY2fmVi_sSPL6PbJATC9MdsgQoQ9kUgpKQ3gGeatehF-CzuuVbu1WMjG-k0bTvbnJHZWnd7BDRYTjXbvNZyOGV8"
+                        />
+                    </div>
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Bit by Bit</h1>
+                        <p class="text-xl text-on-surface-variant max-w-lg mx-auto leading-relaxed">
+                            Where we blur the line between playing and making. Bit by Bit turns your (and your friends) questionable design choices
+                            into absolute nonsense, making the building feel like just another part of the game.
+                        </p>
+                        <div class="pt-4">
+                            <button
+                                class="bg-gray-500 text-on-primary px-10 py-4 rounded-xl font-bold hover:translate-y-[-2px] active:scale-95 transition-all duration-200"
+                            >
+                                Coming soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-</div>
-</footer>
-</body></html>
+        </main>
+        <!-- Simple Footer -->
+        <footer class="w-full py-8 border-t border-surface-container">
+            <div class="max-w-7xl mx-auto px-8 text-center">
+                <div class="text-[#302f2a]/60 text-sm font-['Be_Vietnam_Pro']">© 2026 Stroopwafel Games</div>
+            </div>
+        </footer>
+    </body>
+</html>
